@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paint Quote System - Sign Up</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7f4 0%, #b3e5fc 50%, #e0f7f4 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      max-width: 1200px;
+      width: 100%;
+      align-items: center;
+    }
+
+    .left-section {
+      color: #4a9b8e;
+      padding: 2rem;
+    }
+
+    .left-section h1 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      font-weight: 1200;
+      color: #2c6e64;
+      border-bottom: 1px solid #d0d0d0
+    }
+
+    .left-section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #5a8f84;
+    }
+
+    .right-section {
+      background: white;
+      border-radius: 12px;
+      padding: 3rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .form-header h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .form-header p {
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      color: #333;
+      transition: border-color 1s ease;
+    }
+
+    .form-group input::placeholder {
+      color: #bbb;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #3fac67;
+      box-shadow: 0 0 0 3px rgba(126, 87, 194, 0.1);
+    }
+
+    .signup-button {
+      width: 100%;
+      padding: 0.75rem;
+      background: linear-gradient(135deg, #0277bd 0%, #01579b 100%);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-top: 1rem;
+    }
+
+    .signup-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(2, 119, 189, 0.3);
+    }
+
+    .signup-button:active {
+      transform: translateY(0);
+    }
+
+    .signin-link {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .signin-link a {
+      color: #0277bd;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .signin-link a:hover {
+      color: #01579b;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .left-section {
+        text-align: center;
+      }
+
+      .left-section h1 {
+        font-size: 2rem;
+      }
+
+      .right-section {
+        padding: 2rem;
+      }
+    }
+
+
+
+
+
+  </style>
+</head>
+
+
+<body>
+  <div class="container">
+
+    <div class="left-section">
+      <h1>Welcome to Paint Quote System</h1>
+      <p>Connect, discover and do business with paint professionals. Get instant quotes and manage all your paint projects in one place.</p>
+    </div>
+
+
+    <div class="right-section">
+      <div class="form-header">
+        <h2>Sign Up</h2>
+        <p>Enter details to create your account</p>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="color">Color account</label>
+          <input type="text" id="color" name="color" placeholder="Enter your account" required>
+        </div>
+
+        <button type="submit" class="signup-button">Sign up</button>
+
+        <div class="signin-link">
+          Already have an account? <a href="#signin">Sign in</a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>
